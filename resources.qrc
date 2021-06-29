@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/export.png</file>
+        <file>img/folder-icon-open.jpg</file>
+        <file>img/save.png</file>
+        <file>img/settings (1).png</file>
+        <file>img/settings.png</file>
+        <file>img/Add.png</file>
+        <file>img/delete-forever.png</file>
+        <file>img/save-as.png</file>
+        <file>img/Ensign_of_France.png</file>
+        <file>img/flag_en_big.jpg</file>
+        <file>img/Flag_of_Russia.svg.png</file>
+        <file>img/graph.png</file>
+        <file>img/finland.png</file>
+        <file>img/ask-question.png</file>
+        <file>img/openfile.png</file>
+        <file>img/pngegg.png</file>
+        <file>img/pngegg (1).png</file>
+        <file>img/icon-5b4ea.png</file>
+        <file>img/klipartz.com.png</file>
+    </qresource>
+</RCC>

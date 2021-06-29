@@ -1,0 +1,118 @@
+\hypertarget{class_main_window}{}\doxysection{Класс Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Класс основного окна  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Граф наследования\+:Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+{\bfseries Main\+Window} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор главного окна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a769c51c9ea6828e533862f980d27a70e}{Read\+File}} (QList$<$ \mbox{\hyperlink{class_t_monitor}{TMonitor}} $>$ $\ast$temp\+List, const QString file\+Path)
+\begin{DoxyCompactList}\small\item\em Считывает данные из файла и записывает в список \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ae5ce9f77ae8f5958c2b41f237f5f91f3}{Write\+File}} (QList$<$ \mbox{\hyperlink{class_t_monitor}{TMonitor}} $>$ $\ast$temp\+List, const QString file\+Path)
+\begin{DoxyCompactList}\small\item\em Заполняет файл данными из списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5075efaf19b3ac98f57173da50fb051e}{Read\+Table}} (QList$<$ \mbox{\hyperlink{class_t_monitor}{TMonitor}} $>$ $\ast$save\+List)
+\begin{DoxyCompactList}\small\item\em Считывает данные из таблицы главного окна \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_abb30531afee763d0586ee6323fd332e2}\label{class_main_window_abb30531afee763d0586ee6323fd332e2}} 
+void \mbox{\hyperlink{class_main_window_abb30531afee763d0586ee6323fd332e2}{save\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em Сохраняет настройки главного окна в реестре \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930}\label{class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930}} 
+void \mbox{\hyperlink{class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930}{load\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em Загружает настройки главного окна из реестра \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a53fd1e1d3acbd985e622f97003c20e4e}\label{class_main_window_a53fd1e1d3acbd985e622f97003c20e4e}} 
+QString {\bfseries filename}
+\item 
+\mbox{\Hypertarget{class_main_window_a7415b70f0c8a9baa308d81ceceb10781}\label{class_main_window_a7415b70f0c8a9baa308d81ceceb10781}} 
+bool {\bfseries is\+Add\+Up}
+\item 
+\mbox{\Hypertarget{class_main_window_aed0345cbc5e0c3b6aa3afa7bd4208bde}\label{class_main_window_aed0345cbc5e0c3b6aa3afa7bd4208bde}} 
+bool {\bfseries is\+Dark\+Mode}
+\item 
+\mbox{\Hypertarget{class_main_window_acc37dc081bfe032dc91a95a3eae908b8}\label{class_main_window_acc37dc081bfe032dc91a95a3eae908b8}} 
+bool {\bfseries is\+Select\+Item}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс основного окна 
+
+@mainclass
+
+Класс главного окна формы, отображает получаемые данные из файлов, а также обрабатывает все сигналы с окна, вызывая слоты описанные в файле mainwindow.\+cpp 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_main_window_a769c51c9ea6828e533862f980d27a70e}\label{class_main_window_a769c51c9ea6828e533862f980d27a70e}} 
+\index{MainWindow@{MainWindow}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Read\+File (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_t_monitor}{TMonitor}} $>$ $\ast$}]{temp\+List,  }\item[{const QString}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Считывает данные из файла и записывает в список 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em temp\+List} & \\
+\hline
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a5075efaf19b3ac98f57173da50fb051e}\label{class_main_window_a5075efaf19b3ac98f57173da50fb051e}} 
+\index{MainWindow@{MainWindow}!ReadTable@{ReadTable}}
+\index{ReadTable@{ReadTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ReadTable()}{ReadTable()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Read\+Table (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_t_monitor}{TMonitor}} $>$ $\ast$}]{save\+List }\end{DoxyParamCaption})}
+
+
+
+Считывает данные из таблицы главного окна 
+
+Функция считывает данный из каждой ячейки таблицы и записывает их в список QList 
+\begin{DoxyParams}{Аргументы}
+{\em save\+List} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ae5ce9f77ae8f5958c2b41f237f5f91f3}\label{class_main_window_ae5ce9f77ae8f5958c2b41f237f5f91f3}} 
+\index{MainWindow@{MainWindow}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Write\+File (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_t_monitor}{TMonitor}} $>$ $\ast$}]{temp\+List,  }\item[{const QString}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Заполняет файл данными из списка 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em temp\+List} & \\
+\hline
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monitors base (QT): Исходный файл dialogsettings.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="png-cxt.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Monitors base (QT)
+   &#160;<span id="projectnumber">Beta 1_1</span>
+   </div>
+   <div id="projectbrief">Grid notebook</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dialogsettings.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DIALOGSETTINGS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DIALOGSETTINGS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_dialog_settings.html">DialogSettings</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_dialog_settings.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dialog_settings.html">DialogSettings</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_dialog_settings.html">DialogSettings</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_dialog_settings.html#a10e028cc22f2ab2367f582242fd8115e">~DialogSettings</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> isAddUpModeOn = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_dialog_settings.html#a326a2573ceb5349d92ac006c6155a4a1">   24</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dialog_settings.html#a326a2573ceb5349d92ac006c6155a4a1">isDarkModeOn</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_dialog_settings.html#a1bc943770289c2d2368ce81bc617a93b">   25</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dialog_settings.html#a1bc943770289c2d2368ce81bc617a93b">isItemSelectMode</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//signals:</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//    void sendData(QString str);</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//private slots:</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//    void onButtonSend();</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_dialog_settings.html#a5b53d91a27cdf68f77e4bdd10b6a9bba">   33</a></span>&#160;    Ui::DialogSettings *<a class="code" href="class_dialog_settings.html#a5b53d91a27cdf68f77e4bdd10b6a9bba">ui</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> on_radioButtonAddUp_clicked();<span class="comment">//(bool &amp;isAddUpModeOn);</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> on_radioButtonAddDown_clicked();<span class="comment">//(bool &amp;isAddUpModeOn);</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> on_radioButtonThemeWhite_clicked();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> on_radioButtonThemeDark_clicked();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> on_radioButtonSelectString_clicked();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> on_radioButtonSelectItem_clicked();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DIALOGSETTINGS_H</span></div>
+<div class="ttc" id="aclass_dialog_settings_html"><div class="ttname"><a href="class_dialog_settings.html">DialogSettings</a></div><div class="ttdoc">Класс диалогового окна настроек</div><div class="ttdef"><b>Definition:</b> dialogsettings.h:16</div></div>
+<div class="ttc" id="aclass_dialog_settings_html_a10e028cc22f2ab2367f582242fd8115e"><div class="ttname"><a href="class_dialog_settings.html#a10e028cc22f2ab2367f582242fd8115e">DialogSettings::~DialogSettings</a></div><div class="ttdeci">~DialogSettings()</div><div class="ttdoc">Деструктор окна настроек</div><div class="ttdef"><b>Definition:</b> dialogsettings.cpp:19</div></div>
+<div class="ttc" id="aclass_dialog_settings_html_a1bc943770289c2d2368ce81bc617a93b"><div class="ttname"><a href="class_dialog_settings.html#a1bc943770289c2d2368ce81bc617a93b">DialogSettings::isItemSelectMode</a></div><div class="ttdeci">bool isItemSelectMode</div><div class="ttdoc">Темная тема</div><div class="ttdef"><b>Definition:</b> dialogsettings.h:25</div></div>
+<div class="ttc" id="aclass_dialog_settings_html_a326a2573ceb5349d92ac006c6155a4a1"><div class="ttname"><a href="class_dialog_settings.html#a326a2573ceb5349d92ac006c6155a4a1">DialogSettings::isDarkModeOn</a></div><div class="ttdeci">bool isDarkModeOn</div><div class="ttdoc">Режим добавления новой строки</div><div class="ttdef"><b>Definition:</b> dialogsettings.h:24</div></div>
+<div class="ttc" id="aclass_dialog_settings_html_a5b53d91a27cdf68f77e4bdd10b6a9bba"><div class="ttname"><a href="class_dialog_settings.html#a5b53d91a27cdf68f77e4bdd10b6a9bba">DialogSettings::ui</a></div><div class="ttdeci">Ui::DialogSettings * ui</div><div class="ttdoc">Режим выбора элементов</div><div class="ttdef"><b>Definition:</b> dialogsettings.h:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

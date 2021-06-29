@@ -1,0 +1,236 @@
+\hypertarget{class_q_c_p_abstract_legend_item}{}\doxysection{Класс QCPAbstract\+Legend\+Item}
+\label{class_q_c_p_abstract_legend_item}\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+
+
+The abstract base class for all entries in a \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}.  
+
+
+Граф наследования\+:QCPAbstract\+Legend\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_q_c_p_abstract_legend_item}
+\end{center}
+\end{figure}
+\doxysubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a7cb61fdfbaf69c590bacb8f9e7099d9e}{selection\+Changed}} (bool selected)
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_abc4d779b938cc9235f9196737dbaa6bd}\label{class_q_c_p_abstract_legend_item_abc4d779b938cc9235f9196737dbaa6bd}} 
+void {\bfseries selectable\+Changed} (bool selectable)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_abstract_legend_item_afaff87610e8da0fa238ecf552872d774}{QCPAbstract\+Legend\+Item}} (\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a15709a3f6b2ce3946261fe90422ae32e}\label{class_q_c_p_abstract_legend_item_a15709a3f6b2ce3946261fe90422ae32e}} 
+\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$ {\bfseries parent\+Legend} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a699b18e1d9e70372e51e75f462dbb643}\label{class_q_c_p_abstract_legend_item_a699b18e1d9e70372e51e75f462dbb643}} 
+QFont {\bfseries font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a35b35fa697dcece86cf7e5818c0820b2}\label{class_q_c_p_abstract_legend_item_a35b35fa697dcece86cf7e5818c0820b2}} 
+QColor {\bfseries text\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_ace98814b31762578228f6b32111cd3c0}\label{class_q_c_p_abstract_legend_item_ace98814b31762578228f6b32111cd3c0}} 
+QFont {\bfseries selected\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a09540594509fb0074f3a1b39548e3bdc}\label{class_q_c_p_abstract_legend_item_a09540594509fb0074f3a1b39548e3bdc}} 
+QColor {\bfseries selected\+Text\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_af054a668038bcd7e35a35a07d1e79a23}\label{class_q_c_p_abstract_legend_item_af054a668038bcd7e35a35a07d1e79a23}} 
+bool {\bfseries selectable} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_adf427dbb05d5f1a8e84c6abcb05becdf}\label{class_q_c_p_abstract_legend_item_adf427dbb05d5f1a8e84c6abcb05becdf}} 
+bool {\bfseries selected} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a409c53455d8112f71d70c0c43eb10265}{set\+Font}} (const QFont \&font)
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a6ebace6aaffaedcdab2d74e88acc2d1e}{set\+Text\+Color}} (const QColor \&color)
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a91db5aee48617a9d3206e61376807365}{set\+Selected\+Font}} (const QFont \&font)
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a4d01d008ee1a5bfe9905b0397a421936}{set\+Selected\+Text\+Color}} (const QColor \&color)
+\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a9913ef48730551b696e7f98a2391c599}{set\+Selectable}} (bool selectable)
+\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a6eed93b0ab99cb3eabb043fb08179c2b}{set\+Selected}} (bool selected)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a206879d493749c3fb1494850bff40e7e}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_af8eb0fda0e11b0a23e1051b0102c8c6a}\label{class_q_c_p_abstract_legend_item_af8eb0fda0e11b0a23e1051b0102c8c6a}} 
+virtual \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037}{QCP\+::\+Interaction}} {\bfseries selection\+Category} () const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a6bfbcb9ace779f4f6fe22241c32a67c9}\label{class_q_c_p_abstract_legend_item_a6bfbcb9ace779f4f6fe22241c32a67c9}} 
+virtual void {\bfseries apply\+Default\+Antialiasing\+Hint} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a806fa4d0104bdfc141aa8a36fcc9d51c}\label{class_q_c_p_abstract_legend_item_a806fa4d0104bdfc141aa8a36fcc9d51c}} 
+virtual QRect {\bfseries clip\+Rect} () const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a14ce0b09f5b814c765a0d790bd838909}\label{class_q_c_p_abstract_legend_item_a14ce0b09f5b814c765a0d790bd838909}} 
+virtual void {\bfseries draw} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE=0
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a0081acfd8c4bb8ac4e9dcfe0f6c49b74}\label{class_q_c_p_abstract_legend_item_a0081acfd8c4bb8ac4e9dcfe0f6c49b74}} 
+virtual void {\bfseries select\+Event} (QMouse\+Event $\ast$event, bool additive, const QVariant \&details, bool $\ast$selection\+State\+Changed) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_aa1c0620558cc8e2a2e6fb7ab558f6097}\label{class_q_c_p_abstract_legend_item_aa1c0620558cc8e2a2e6fb7ab558f6097}} 
+virtual void {\bfseries deselect\+Event} (bool $\ast$selection\+State\+Changed) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_aafcd9fc6fcb10f4a8d46037011afafe8}\label{class_q_c_p_abstract_legend_item_aafcd9fc6fcb10f4a8d46037011afafe8}} 
+\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$ {\bfseries m\+Parent\+Legend}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_ae916a78ac0d2a60e20a17ca2f24f9754}\label{class_q_c_p_abstract_legend_item_ae916a78ac0d2a60e20a17ca2f24f9754}} 
+QFont {\bfseries m\+Font}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a974b21e9930227d281344bd2242d289d}\label{class_q_c_p_abstract_legend_item_a974b21e9930227d281344bd2242d289d}} 
+QColor {\bfseries m\+Text\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_ab971df604306b192875a7d097feb1e21}\label{class_q_c_p_abstract_legend_item_ab971df604306b192875a7d097feb1e21}} 
+QFont {\bfseries m\+Selected\+Font}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a4965c13854d970b24c284f0a4f005fbd}\label{class_q_c_p_abstract_legend_item_a4965c13854d970b24c284f0a4f005fbd}} 
+QColor {\bfseries m\+Selected\+Text\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_aa84029f57b1b32f642fb7db63c3fc2c2}\label{class_q_c_p_abstract_legend_item_aa84029f57b1b32f642fb7db63c3fc2c2}} 
+bool {\bfseries m\+Selectable}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_ae58ebebbd0c36cc6fe897483369984d2}\label{class_q_c_p_abstract_legend_item_ae58ebebbd0c36cc6fe897483369984d2}} 
+bool {\bfseries m\+Selected}
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a8429035e7adfbd7f05805a6530ad5e3b}\label{class_q_c_p_abstract_legend_item_a8429035e7adfbd7f05805a6530ad5e3b}} 
+class {\bfseries QCPLegend}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+The abstract base class for all entries in a \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}. 
+
+It defines a very basic interface for entries in a \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}. For representing plottables in the legend, the subclass \mbox{\hyperlink{class_q_c_p_plottable_legend_item}{QCPPlottable\+Legend\+Item}} is more suitable.
+
+Only derive directly from this class when you need absolute freedom (e.\+g. a custom legend entry that\textquotesingle{}s not even associated with a plottable).
+
+You must implement the following pure virtual functions\+: \begin{DoxyItemize}
+\item draw (from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}})\end{DoxyItemize}
+You inherit the following members you may use\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast${\bfseries{m\+Parent\+Legend}}  &A pointer to the parent \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}. \\\cline{1-2}
+QFont {\bfseries{m\+Font}}  &The generic font of the item. You should use this font for all or at least the most prominent text of the item.  \\\cline{1-2}
+\end{longtabu}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_afaff87610e8da0fa238ecf552872d774}\label{class_q_c_p_abstract_legend_item_afaff87610e8da0fa238ecf552872d774}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{QCPAbstractLegendItem()}{QCPAbstractLegendItem()}}
+{\footnotesize\ttfamily QCPAbstract\+Legend\+Item\+::\+QCPAbstract\+Legend\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a \mbox{\hyperlink{class_q_c_p_abstract_legend_item}{QCPAbstract\+Legend\+Item}} and associates it with the \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} {\itshape parent}. This does not cause the item to be added to {\itshape parent}, so \mbox{\hyperlink{class_q_c_p_legend_a3ab274de52d2951faea45a6d975e6b3f}{QCPLegend\+::add\+Item}} must be called separately. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a7cb61fdfbaf69c590bacb8f9e7099d9e}\label{class_q_c_p_abstract_legend_item_a7cb61fdfbaf69c590bacb8f9e7099d9e}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!selectionChanged@{selectionChanged}}
+\index{selectionChanged@{selectionChanged}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{selectionChanged}{selectionChanged}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::selection\+Changed (\begin{DoxyParamCaption}\item[{bool}]{selected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+This signal is emitted when the selection state of this legend item has changed, either by user interaction or by a direct call to \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a6eed93b0ab99cb3eabb043fb08179c2b}{set\+Selected}}. \mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a206879d493749c3fb1494850bff40e7e}\label{class_q_c_p_abstract_legend_item_a206879d493749c3fb1494850bff40e7e}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPAbstract\+Legend\+Item\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Layout elements are sensitive to events inside their outer rect. If {\itshape pos} is within the outer rect, this method returns a value corresponding to 0.\+99 times the parent plot\textquotesingle{}s selection tolerance. However, layout elements are not selectable by default. So if {\itshape only\+Selectable} is true, -\/1.\+0 is returned.
+
+See \mbox{\hyperlink{class_q_c_p_layerable_a272989087fc8c4357b4ba614f9922336}{QCPLayerable\+::select\+Test}} for a general explanation of this virtual method.
+
+\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} subclasses may reimplement this method to provide more specific selection test behaviour. 
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}{QCPLayout\+Element}}.
+
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a409c53455d8112f71d70c0c43eb10265}\label{class_q_c_p_abstract_legend_item_a409c53455d8112f71d70c0c43eb10265}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!setFont@{setFont}}
+\index{setFont@{setFont}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::set\+Font (\begin{DoxyParamCaption}\item[{const QFont \&}]{font }\end{DoxyParamCaption})}
+
+Sets the default font of this specific legend item to {\itshape font}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_legend_item_a6ebace6aaffaedcdab2d74e88acc2d1e}{set\+Text\+Color}}, \mbox{\hyperlink{class_q_c_p_legend_aa4cda8499e3cb0f3be415edc02984c73}{QCPLegend\+::set\+Font}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a9913ef48730551b696e7f98a2391c599}\label{class_q_c_p_abstract_legend_item_a9913ef48730551b696e7f98a2391c599}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!setSelectable@{setSelectable}}
+\index{setSelectable@{setSelectable}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{setSelectable()}{setSelectable()}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::set\+Selectable (\begin{DoxyParamCaption}\item[{bool}]{selectable }\end{DoxyParamCaption})}
+
+Sets whether this specific legend item is selectable.
+
+\begin{DoxySeeAlso}{См. также}
+set\+Selected\+Parts, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a6eed93b0ab99cb3eabb043fb08179c2b}\label{class_q_c_p_abstract_legend_item_a6eed93b0ab99cb3eabb043fb08179c2b}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!setSelected@{setSelected}}
+\index{setSelected@{setSelected}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{setSelected()}{setSelected()}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::set\+Selected (\begin{DoxyParamCaption}\item[{bool}]{selected }\end{DoxyParamCaption})}
+
+Sets whether this specific legend item is selected.
+
+It is possible to set the selection state of this item by calling this function directly, even if set\+Selectable is set to false.
+
+\begin{DoxySeeAlso}{См. также}
+set\+Selectable\+Parts, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a91db5aee48617a9d3206e61376807365}\label{class_q_c_p_abstract_legend_item_a91db5aee48617a9d3206e61376807365}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!setSelectedFont@{setSelectedFont}}
+\index{setSelectedFont@{setSelectedFont}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{setSelectedFont()}{setSelectedFont()}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::set\+Selected\+Font (\begin{DoxyParamCaption}\item[{const QFont \&}]{font }\end{DoxyParamCaption})}
+
+When this legend item is selected, {\itshape font} is used to draw generic text, instead of the normal font set with \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a409c53455d8112f71d70c0c43eb10265}{set\+Font}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_legend_item_a409c53455d8112f71d70c0c43eb10265}{set\+Font}}, \mbox{\hyperlink{class_q_c_p_legend_ab580a01c3c0a239374ed66c29edf5ad2}{QCPLegend\+::set\+Selected\+Font}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a4d01d008ee1a5bfe9905b0397a421936}\label{class_q_c_p_abstract_legend_item_a4d01d008ee1a5bfe9905b0397a421936}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!setSelectedTextColor@{setSelectedTextColor}}
+\index{setSelectedTextColor@{setSelectedTextColor}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{setSelectedTextColor()}{setSelectedTextColor()}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::set\+Selected\+Text\+Color (\begin{DoxyParamCaption}\item[{const QColor \&}]{color }\end{DoxyParamCaption})}
+
+When this legend item is selected, {\itshape color} is used to draw generic text, instead of the normal color set with \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a6ebace6aaffaedcdab2d74e88acc2d1e}{set\+Text\+Color}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_legend_item_a6ebace6aaffaedcdab2d74e88acc2d1e}{set\+Text\+Color}}, \mbox{\hyperlink{class_q_c_p_legend_a7674dfc7a1f30e1abd1018c0ed45e0bc}{QCPLegend\+::set\+Selected\+Text\+Color}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_c_p_abstract_legend_item_a6ebace6aaffaedcdab2d74e88acc2d1e}\label{class_q_c_p_abstract_legend_item_a6ebace6aaffaedcdab2d74e88acc2d1e}} 
+\index{QCPAbstractLegendItem@{QCPAbstractLegendItem}!setTextColor@{setTextColor}}
+\index{setTextColor@{setTextColor}!QCPAbstractLegendItem@{QCPAbstractLegendItem}}
+\doxysubsubsection{\texorpdfstring{setTextColor()}{setTextColor()}}
+{\footnotesize\ttfamily void QCPAbstract\+Legend\+Item\+::set\+Text\+Color (\begin{DoxyParamCaption}\item[{const QColor \&}]{color }\end{DoxyParamCaption})}
+
+Sets the default text color of this specific legend item to {\itshape color}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_legend_item_a409c53455d8112f71d70c0c43eb10265}{set\+Font}}, \mbox{\hyperlink{class_q_c_p_legend_ae1eb239ff4a4632fe1b6c3e668d845c6}{QCPLegend\+::set\+Text\+Color}} 
+\end{DoxySeeAlso}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+qcustomplot.\+h\item 
+qcustomplot.\+cpp\end{DoxyCompactItemize}
